@@ -1,0 +1,28 @@
+{
+  "name": "product-parser",
+  "version": "1.0.0",
+  "description": "simple node app for parsing products on online stores",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Volodymyr Rabeshko",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "node-html-parser": "^5.3.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.43",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.3"
+  }
+}
